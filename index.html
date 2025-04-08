@@ -67,6 +67,8 @@
       <button onclick="changeContent('sport')">Sport</button>
       <button onclick="changeContent('it')">IT</button>
       <button onclick="changeContent('travel')">Traveling</button>
+      <h3>About me</h3>
+      <button onclick="changeContent('about')">Basic info</button>
     </div>
 
     <div class="content" id="main-content">
@@ -101,6 +103,12 @@
           content.innerHTML = `
             <h2>Traveling</h2>
             <p>I really like traveling but I am too young to travel on my own. I would love to travel in future but now I really like to watch documents and vlogs from many diffrent places around the world.</p>
+          `;
+          break;
+        case 'about':
+          content.innerHTML = `
+            <h2>About me</h2>
+            <p>I am Maciej and I am 17 years old student. I am learning to become an IT Technician. I live in Poznań, Poland with my parents, older brother, younger sister, my dog and my cat.</p>
           `;
           break;
         default:
